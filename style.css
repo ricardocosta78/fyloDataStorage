@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+:root {
+  --gradientOne: hsl(6, 100%, 80%);
+  --gradientTwo: hsl(335, 100%, 65%);
+  --paleBlue: hsl(243, 100%, 93%);
+  --grayishBlue: hsl(229, 7%, 55%);
+  --darkBlue: hsl(228, 56%, 26%);
+  --veryDarkBlue: hsl(229, 57%, 11%);
+  --fontFamily: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fontFamily);
+}
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--veryDarkBlue);
+  z-index: 1;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url('images/bg-desktop.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+/* .background {
+  width: 100%;
+  height:100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+} */
+.icons {
+  width: 300px;
+  height: 200px;
+  background-color: var(--darkBlue);
+  z-index: 3;
+  border-radius: 10px 100px 10px 10px;
+  position: absolute;
+  top: 28%;
+  left: 25%;
+}
+.icons .icons-img {
+  width: 120px;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+}
+.icon {
+  position: absolute;
+  top: 80%;
+  left: 15%;
+}
+.icon .icon-img {
+  position: relative;
+}
+.icon .icon-img:nth-child(1) {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  padding: 0.8rem;
+  top: -50px;
+  border-radius: 10px;
+  background-color: var(--veryDarkBlue);
+  left: 0px;
+}
+.icon .icon-img:nth-child(2) {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  padding: 0.8rem;
+  top: -50px;
+  border-radius: 10px;
+  background-color: var(--veryDarkBlue);
+  left: 50px;
+  margin-left: 0.5rem;
+}
+.icon .icon-img:nth-child(3) {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  padding: 0.8rem;
+  top: -50px;
+  border-radius: 10px;
+  background-color: var(--veryDarkBlue);
+  left: 100px;
+  margin-left: 1rem;
+}
+.right {
+  width: 500px;
+  height: 150px;
+  background-color: var(--darkBlue);
+  z-index: 3;
+  position: absolute;
+  top: 35%;
+  left: 48%;
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+.right p {
+  color: var(--grayishBlue);
+}
+.right p span {
+  font-weight: 700;
+  color: white;
+}
+.outside {
+  width: 100%;
+  height: 15px;
+  background-color: var(--veryDarkBlue);
+  border-radius: 10px;
+  z-index: 4;
+}
+.inner {
+  width: 81.5%;
+  height: 90%;
+  background: linear-gradient(90deg, var(--gradientOne), var(--gradientTwo));
+  border-radius: 10px;
+  position: relative;
+}
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 1px;
+  right: 0px;
+}
+.gigas {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+}
+.left {
+  width: 160px;
+  height: 60px;
+  position: absolute;
+  background: white;
+  top: -35px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.left::before {
+  content: '\25C0';
+  font-size: 3rem;
+  position: absolute;
+  right: -3px;
+  bottom: -27px;
+}
+.left span {
+  font-size: 2rem;
+  color: var(--veryDarkBlue);
+  font-weight: 700;
+}
+.left p {
+  color: var(--darkBlue);
+  margin-left: 1rem;
+  text-transform: uppercase;
+}
+.atribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 380px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/bg-mobile.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .background {
+    display: none;
+  }
+  .icons {
+    width: 85%;
+    position: absolute;
+    top: 20%;
+    left: 7.5%;
+  }
+  .right {
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 7.5%;
+    text-align: center;
+  }
+  .left {
+      width:180px;
+    height: 70px;
+    position: absolute;
+    background: white;
+    top: 125px;
+    right: 85px;
+    padding:1rem;
+  }
+  .left::before {
+    content: '';
+  }
+  .left span {
+    font-size: 3rem;
+  }
+  .left p{
+      font-size: .9rem;
+  }
+}
