@@ -45,7 +45,7 @@ body {
   z-index: 3;
   border-radius: 10px 100px 10px 10px;
   position: absolute;
-  top: 35%;
+  top: 37%;
   left: 20%;
 }
 .icons .icons-img {
@@ -100,7 +100,7 @@ body {
   background-color: var(--darkBlue);
   z-index: 3;
   position: absolute;
-  top: 40%;
+  top: 42%;
   left: 46%;
   padding: 1rem 2rem;
   color: white;
@@ -149,7 +149,7 @@ body {
 }
 .left {
   width: 160px;
-  height: 60px;
+  height: 70px;
   position: absolute;
   background: white;
   top: -35px;
